@@ -30,6 +30,8 @@
     "electron:serve": "concurrently -k \"cross-env BROWSER=none yarn start\" \"yarn electron:start\"",
     "electron:build": "yarn build && electron-builder -c.extraMetadata.main=build/main.js",
     "electron:start": "wait-on tcp:3000 && electron .",
+    "make-linux": "react-scripts build && electron-forge make --platform linux",
+    "make-mac": "react-scripts build && electron-forge make --platform darwin",
     "app:build": "electron-packager . app --platform win32 --arch x64 --out dist/ "
   },
   "build": {
