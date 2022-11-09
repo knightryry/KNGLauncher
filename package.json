@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^12.1.10",
     "bootstrap": "^5.0.0-beta1",
     "electron-dl": "^3.3.1",
+    "electron-forge": "^5.2.4",
     "electron-is-dev": "^1.2.0",
     "electron-packager": "^16.0.0",
     "electron-store": "^8.1.0",
@@ -30,6 +31,8 @@
     "electron:serve": "concurrently -k \"cross-env BROWSER=none yarn start\" \"yarn electron:start\"",
     "electron:build": "yarn build && electron-builder -c.extraMetadata.main=build/main.js",
     "electron:start": "wait-on tcp:3000 && electron .",
+    "make-linux": "react-scripts build && electron-forge make --platform linux",
+    "make-mac": "react-scripts build && electron-forge make --platform darwin",
     "app:build": "electron-packager . app --platform win32 --arch x64 --out dist/ "
   },
   "build": {
