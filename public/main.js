@@ -44,7 +44,7 @@ ipcMain.on("app/launch", () => {
 
   let opts = {
     clientPackage: "https://github.com/knightryry/KNGClient-Libs/raw/main/clientPackage.zip",
-    authorization: Authenticator.getAuth("NameHere"),
+    authorization: Authenticator.getAuth("ChangeMe"),
     root: "./minecraft",
     version: {
         number: "1.8.9",
