@@ -1,0 +1,16 @@
+.App{
+    background: black;
+    color: white;
+    height: 100vh;
+}
+.btn{
+    position: absolute;
+    top: 350px;
+    left: 550px;
+    background: white
+}
+.head{
+    position: absolute;
+    top: 20px;
+    left: 425px;
+}
