@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^12.1.10",
     "bootstrap": "^5.0.0-beta1",
     "electron-dl": "^3.3.1",
+    "electron-forge": "^5.2.4",
     "electron-is-dev": "^1.2.0",
     "electron-packager": "^16.0.0",
     "electron-store": "^8.1.0",
